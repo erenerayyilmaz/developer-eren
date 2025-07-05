@@ -59,7 +59,7 @@ const Header = () => {
           {/* Social Links */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="https://www.linkedin.com/in/eren-eray-y%C4%B1lmaz-014191291/"
+              href="https://www.linkedin.com/in/eren-eray-yılmaz-014191291/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-portfolio-blue transition-colors duration-200"
