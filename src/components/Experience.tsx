@@ -5,40 +5,22 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      company: 'TÜBİTAK',
-      position: 'Java Developer Intern',
-      location: 'Ankara, Turkey',
-      period: '2024',
-      description: 'Developed Java applications using Spring Framework. Worked on backend services and database integration. Participated in code reviews and agile development practices.',
-      technologies: ['Java', 'Spring Boot', 'MySQL', 'Maven', 'Git'],
+      company: 'Aksoy Çözüm LTD. ŞTİ.',
+      position: 'Software Developer Intern',
+      location: 'Remote',
+      period: '2024 (1 Month)',
+      description: 'Completed mandatory internship focusing on software development practices. Gained hands-on experience with modern development tools and methodologies.',
+      technologies: ['JavaScript', 'HTML/CSS', 'Software Development', 'Project Management'],
       type: 'Internship'
     },
     {
-      company: 'Aksoy Çözüm LTD. ŞTİ.',
-      position: 'Full-Stack Developer',
-      location: 'Remote',
-      period: '2023 - 2024',
-      description: 'Built full-stack web applications using ASP.NET and C#. Developed responsive front-end interfaces and implemented RESTful APIs. Collaborated with team members on various client projects.',
-      technologies: ['C#', 'ASP.NET', 'JavaScript', 'HTML/CSS', 'SQL Server'],
-      type: 'Full-time'
-    },
-    {
-      company: 'Outlier AI',
-      position: 'AI Prompt Engineer',
-      location: 'Remote',
-      period: '2023',
-      description: 'Contributed to AI model training through prompt engineering and data validation. Worked on improving AI response quality and accuracy for various use cases.',
-      technologies: ['Python', 'AI/ML', 'Data Analysis', 'Prompt Engineering'],
-      type: 'Contract'
-    },
-    {
       company: 'Başarı Yapı Denetim',
-      position: 'Frontend Developer',
-      location: 'Bursa, Turkey',
-      period: '2022 - 2023',
-      description: 'Developed responsive web interfaces using HTML, CSS, and JavaScript. Created user-friendly designs and implemented interactive features for construction management systems.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'jQuery'],
-      type: 'Part-time'
+      position: 'Software Developer Intern',
+      location: 'Eskişehir, Turkey',
+      period: '2023 (1 Month)',
+      description: 'Completed mandatory internship in construction management software systems. Worked on digital solutions for construction oversight and project management.',
+      technologies: ['Software Development', 'Construction Management', 'Digital Solutions'],
+      type: 'Internship'
     }
   ];
 
@@ -66,7 +48,7 @@ const Experience = () => {
           </h2>
           <div className="w-24 h-1 bg-portfolio-blue mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            My professional journey in software development, from internships to full-stack roles
+            My professional journey in software development through internships and hands-on learning experiences
           </p>
         </div>
 
@@ -138,18 +120,29 @@ const Experience = () => {
           </div>
         </div>
 
+        {/* Educational Background Note */}
+        <div className="max-w-4xl mx-auto mt-16">
+          <div className="bg-gray-50 p-8 rounded-2xl text-center">
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">Recent Graduate</h3>
+            <p className="text-gray-600 leading-relaxed">
+              As a recent Computer Engineering graduate, I am eager to begin my professional career in frontend development. 
+              My internships have provided me with valuable hands-on experience and a solid foundation in software development principles.
+            </p>
+          </div>
+        </div>
+
         {/* Call to Action */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-portfolio-blue to-portfolio-purple p-8 rounded-2xl text-white">
-            <h3 className="text-2xl font-bold mb-4">Interested in Working Together?</h3>
+            <h3 className="text-2xl font-bold mb-4">Ready to Start My Career</h3>
             <p className="text-blue-100 mb-6">
-              I'm always open to discussing new opportunities and exciting projects.
+              I'm actively seeking frontend development opportunities and exciting projects to contribute to.
             </p>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="bg-white text-portfolio-blue px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 transform hover:scale-105 inline-flex items-center gap-2"
             >
-              Let's Talk <ExternalLink size={16} />
+              Let's Connect <ExternalLink size={16} />
             </button>
           </div>
         </div>

@@ -5,51 +5,51 @@ import { Code, Database, Globe, Wrench, Users, Brain } from 'lucide-react';
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Programming Languages',
-      icon: Code,
+      title: 'Frontend Technologies',
+      icon: Globe,
       skills: [
-        { name: 'Python', level: 85 },
-        { name: 'Java', level: 90 },
-        { name: 'C#', level: 80 },
         { name: 'JavaScript', level: 85 },
         { name: 'TypeScript', level: 75 },
-        { name: 'SQL', level: 80 }
+        { name: 'React', level: 80 },
+        { name: 'HTML/CSS', level: 90 },
+        { name: 'Tailwind CSS', level: 80 },
+        { name: 'Responsive Design', level: 85 }
       ]
     },
     {
-      title: 'Frameworks & Libraries',
-      icon: Globe,
+      title: 'Programming Languages',
+      icon: Code,
       skills: [
-        { name: 'Spring Boot', level: 85 },
-        { name: 'React', level: 80 },
-        { name: 'Angular', level: 70 },
-        { name: 'ASP.NET', level: 75 },
-        { name: 'Flutter', level: 65 },
-        { name: 'Node.js', level: 70 }
+        { name: 'JavaScript', level: 85 },
+        { name: 'Java', level: 70 },
+        { name: 'Python', level: 65 },
+        { name: 'C++', level: 60 },
+        { name: 'SQL', level: 70 },
+        { name: 'TypeScript', level: 75 }
       ]
     },
     {
       title: 'Tools & Technologies',
       icon: Wrench,
       skills: [
-        { name: 'AWS', level: 70 },
-        { name: 'Docker', level: 65 },
-        { name: 'Git', level: 90 },
-        { name: 'MySQL', level: 80 },
-        { name: 'PostgreSQL', level: 75 },
-        { name: 'TensorFlow', level: 60 }
+        { name: 'Git', level: 80 },
+        { name: 'VS Code', level: 90 },
+        { name: 'npm/yarn', level: 75 },
+        { name: 'Webpack', level: 60 },
+        { name: 'Chrome DevTools', level: 85 },
+        { name: 'Figma', level: 70 }
       ]
     },
     {
       title: 'Soft Skills',
       icon: Users,
       skills: [
-        { name: 'Team Collaboration', level: 95 },
         { name: 'Problem Solving', level: 90 },
-        { name: 'Agile Methodology', level: 85 },
-        { name: 'Communication', level: 90 },
-        { name: 'Leadership', level: 80 },
-        { name: 'Time Management', level: 85 }
+        { name: 'Team Collaboration', level: 85 },
+        { name: 'Communication', level: 85 },
+        { name: 'Adaptability', level: 90 },
+        { name: 'Time Management', level: 80 },
+        { name: 'Critical Thinking', level: 85 }
       ]
     }
   ];
@@ -78,7 +78,7 @@ const Skills = () => {
           </h2>
           <div className="w-24 h-1 bg-portfolio-blue mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            A comprehensive overview of my technical skills and personal interests
+            A comprehensive overview of my technical skills with a focus on frontend development
           </p>
         </div>
 

@@ -31,12 +31,12 @@ const Hero = () => {
           </h1>
           
           <h2 className="text-xl md:text-2xl text-blue-100 mb-8 font-light">
-            Aspiring Full-Stack Developer
+            Frontend Developer & Computer Engineering Graduate
           </h2>
           
           <p className="text-lg md:text-xl text-blue-50 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Computer Engineering graduate passionate about building modern, scalable web applications. 
-            Solution-oriented and eager to learn new technologies.
+            Computer Engineering graduate passionate about building modern, scalable frontend applications. 
+            Specializing in React, JavaScript, and creating exceptional user experiences.
           </p>
 
           {/* CTA Buttons */}

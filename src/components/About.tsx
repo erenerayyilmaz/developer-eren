@@ -4,7 +4,7 @@ import { MapPin, Calendar, User, Award } from 'lucide-react';
 
 const About = () => {
   const personalInfo = [
-    { icon: Calendar, label: 'Born', value: 'March 15, 1999' },
+    { icon: Calendar, label: 'Born', value: 'July 20, 2001' },
     { icon: MapPin, label: 'Location', value: 'Yıldırım, Bursa, Turkey' },
     { icon: User, label: 'Status', value: 'Single' },
     { icon: Award, label: 'Driving License', value: 'B Class' }
@@ -26,19 +26,19 @@ const About = () => {
             <p className="text-lg text-gray-700 leading-relaxed">
               As a Computer Engineering graduate from Eskişehir Technical University, I am passionate about creating 
               innovative software solutions that make a real difference. My journey in technology began with curiosity 
-              and has evolved into a deep commitment to full-stack development.
+              and has evolved into a deep commitment to frontend development.
             </p>
             
             <p className="text-lg text-gray-700 leading-relaxed">
               I thrive in collaborative environments where I can contribute to meaningful projects while continuously 
-              learning and growing. My experience spans from Java backend development at TÜBİTAK to full-stack 
-              applications using modern frameworks like React and ASP.NET.
+              learning and growing. My experience spans from internships at Başarı Yapı Denetim and Aksoy Çözüm, 
+              where I gained hands-on experience in software development and project management.
             </p>
 
             <p className="text-lg text-gray-700 leading-relaxed">
               Beyond coding, I believe in the power of clean, maintainable code and user-centered design. 
               I'm always eager to take on new challenges and contribute to projects that push the boundaries 
-              of what's possible with technology.
+              of what's possible with modern frontend technologies.
             </p>
 
             {/* Personal Details */}
@@ -64,17 +64,7 @@ const About = () => {
             <div className="space-y-6">
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="font-medium text-gray-700">Full-Stack Development</span>
-                  <span className="text-portfolio-blue font-semibold">85%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-portfolio-blue h-3 rounded-full" style={{ width: '85%' }}></div>
-                </div>
-              </div>
-
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-medium text-gray-700">Backend Development</span>
+                  <span className="font-medium text-gray-700">Frontend Development</span>
                   <span className="text-portfolio-blue font-semibold">90%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-3">
@@ -84,7 +74,17 @@ const About = () => {
 
               <div>
                 <div className="flex justify-between mb-2">
-                  <span className="font-medium text-gray-700">Frontend Development</span>
+                  <span className="font-medium text-gray-700">JavaScript/TypeScript</span>
+                  <span className="text-portfolio-blue font-semibold">85%</span>
+                </div>
+                <div className="w-full bg-gray-200 rounded-full h-3">
+                  <div className="bg-portfolio-blue h-3 rounded-full" style={{ width: '85%' }}></div>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex justify-between mb-2">
+                  <span className="font-medium text-gray-700">React Development</span>
                   <span className="text-portfolio-blue font-semibold">80%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-3">

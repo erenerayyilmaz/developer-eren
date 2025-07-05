@@ -8,38 +8,31 @@ const Education = () => {
     university: 'Eskişehir Technical University',
     location: 'Eskişehir, Turkey',
     period: '2020 - 2025',
-    gpa: '3.2/4.0',
-    status: 'Final Year Student'
+    gpa: '2.43/4.0',
+    status: 'Graduate'
   };
 
   const certificates = [
     {
-      title: 'TÜBİTAK Java & Spring Boot Bootcamp',
-      issuer: 'TÜBİTAK',
+      title: 'Frontend Development Bootcamp',
+      issuer: 'Various Online Platforms',
       year: '2024',
-      description: 'Intensive bootcamp covering Java programming, Spring Framework, and modern backend development practices.',
-      skills: ['Java', 'Spring Boot', 'REST APIs', 'Database Design', 'Microservices']
+      description: 'Comprehensive training in modern frontend technologies and frameworks.',
+      skills: ['React', 'JavaScript', 'TypeScript', 'HTML/CSS', 'Responsive Design']
     },
     {
-      title: 'Full-Stack Web Developer',
-      issuer: 'Udemy',
+      title: 'JavaScript Fundamentals',
+      issuer: 'Online Learning Platform',
       year: '2023',
-      description: 'Comprehensive course covering modern web development technologies and best practices.',
-      skills: ['React', 'Node.js', 'MongoDB', 'Express.js', 'JavaScript']
+      description: 'In-depth study of JavaScript programming language and ES6+ features.',
+      skills: ['JavaScript', 'ES6+', 'DOM Manipulation', 'Async Programming']
     },
     {
-      title: 'AWS Academy Cloud Foundations',
-      issuer: 'Amazon Web Services',
+      title: 'Web Development Fundamentals',
+      issuer: 'University Coursework',
       year: '2023',
-      description: 'Foundation course in cloud computing concepts, AWS services, and cloud architecture.',
-      skills: ['AWS', 'Cloud Computing', 'EC2', 'S3', 'Lambda']
-    },
-    {
-      title: 'TechYouth School Program',
-      issuer: 'Eczacıbaşı Holding',
-      year: '2022',
-      description: 'Technology leadership and innovation program focusing on emerging technologies and business skills.',
-      skills: ['Leadership', 'Innovation', 'Technology Management', 'Project Management']
+      description: 'Foundation course covering basic web development concepts and technologies.',
+      skills: ['HTML', 'CSS', 'Basic JavaScript', 'Web Design']
     }
   ];
 
@@ -51,9 +44,9 @@ const Education = () => {
     'Object-Oriented Programming',
     'Computer Networks',
     'Operating Systems',
-    'Machine Learning',
-    'Mobile Application Development',
-    'Software Project Management'
+    'Software Project Management',
+    'Human-Computer Interaction',
+    'Frontend Development'
   ];
 
   return (
@@ -61,11 +54,11 @@ const Education = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Education & <span className="text-portfolio-blue">Certificates</span>
+            Education & <span className="text-portfolio-blue">Learning</span>
           </h2>
           <div className="w-24 h-1 bg-portfolio-blue mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            My academic background and professional certifications that shaped my expertise
+            My academic background and continuous learning journey in computer engineering and frontend development
           </p>
         </div>
 
@@ -122,8 +115,8 @@ const Education = () => {
 
         {/* Certificates */}
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">Professional Certificates</h3>
-          <div className="grid md:grid-cols-2 gap-6">
+          <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">Additional Learning & Certificates</h3>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {certificates.map((cert, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-start justify-between mb-4">
@@ -167,23 +160,23 @@ const Education = () => {
         {/* Achievement Stats */}
         <div className="max-w-4xl mx-auto mt-16">
           <div className="bg-gray-50 p-8 rounded-2xl">
-            <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">Academic Achievements</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-8 text-center">Academic Journey</h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-portfolio-blue mb-2">4.5+</div>
+                <div className="text-3xl font-bold text-portfolio-blue mb-2">5</div>
                 <div className="text-sm text-gray-600">Years of Study</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-portfolio-blue mb-2">4</div>
-                <div className="text-sm text-gray-600">Certificates Earned</div>
+                <div className="text-3xl font-bold text-portfolio-blue mb-2">2</div>
+                <div className="text-sm text-gray-600">Internships Completed</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-portfolio-blue mb-2">10+</div>
                 <div className="text-sm text-gray-600">Relevant Courses</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-portfolio-blue mb-2">3.2</div>
-                <div className="text-sm text-gray-600">Current GPA</div>
+                <div className="text-3xl font-bold text-portfolio-blue mb-2">2.43</div>
+                <div className="text-sm text-gray-600">Final GPA</div>
               </div>
             </div>
           </div>
