@@ -5,6 +5,15 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
+      company: 'Outlier AI',
+      position: 'AI Training Specialist',
+      location: 'Remote',
+      period: '2024 - Present',
+      description: 'Contributing to AI model training and development. Working on improving AI responses and ensuring quality standards in machine learning applications.',
+      technologies: ['AI/ML', 'Data Analysis', 'Quality Assurance', 'Remote Collaboration'],
+      type: 'Contract'
+    },
+    {
       company: 'Aksoy Çözüm LTD. ŞTİ.',
       position: 'Software Developer Intern',
       location: 'Remote',

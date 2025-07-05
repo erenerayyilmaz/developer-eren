@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Code, Database, Globe, Wrench, Users, Brain } from 'lucide-react';
 
@@ -33,7 +34,6 @@ const Skills = () => {
       skills: [
         { name: 'Git', level: 80 },
         { name: 'VS Code', level: 90 },
-        { name: 'npm/yarn', level: 75 },
         { name: 'Webpack', level: 60 },
         { name: 'Chrome DevTools', level: 85 },
         { name: 'Figma', level: 70 }
