@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Code, Database, Globe, Wrench, Users, Brain } from 'lucide-react';
 
@@ -98,7 +97,6 @@ const Skills = () => {
                   <div key={skillIndex}>
                     <div className="flex justify-between mb-2">
                       <span className="font-medium text-gray-700">{skill.name}</span>
-                      <span className="text-portfolio-blue font-semibold">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-2">
                       <div 
