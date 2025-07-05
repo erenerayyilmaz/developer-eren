@@ -1,12 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Experience from '../components/Experience';
+import Skills from '../components/Skills';
+import Education from '../components/Education';
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
 
 const Index = () => {
+  useEffect(() => {
+    // Update document title
+    document.title = 'Eren Eray Yılmaz - Full-Stack Developer Portfolio';
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Eren Eray Yılmaz - Computer Engineering graduate and aspiring Full-Stack Developer. Passionate about building modern, scalable web applications.');
+    }
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Skills />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
 };
