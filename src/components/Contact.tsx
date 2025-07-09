@@ -1,7 +1,7 @@
-
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send, Github, Linkedin } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,9 +25,19 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      console.log('Submitting contact form:', formData);
+      
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData
+      });
+
+      if (error) {
+        console.error('Supabase function error:', error);
+        throw error;
+      }
+
+      console.log('Email sent successfully:', data);
       
       toast({
         title: "Message Sent!",
@@ -40,10 +50,11 @@ const Contact = () => {
         subject: '',
         message: ''
       });
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Error sending message:', error);
       toast({
         title: "Error",
-        description: "Something went wrong. Please try again.",
+        description: "Something went wrong. Please try again or contact me directly.",
         variant: "destructive",
       });
     } finally {
