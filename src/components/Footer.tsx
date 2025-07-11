@@ -40,7 +40,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/in/eren-eray-yilmaz"
+                href="https://www.linkedin.com/in/eren-eray-yılmaz-014191291/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-gray-800 rounded-lg text-gray-400 hover:text-portfolio-blue hover:bg-gray-700 transition-all duration-200"
