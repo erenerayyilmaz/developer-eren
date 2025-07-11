@@ -87,7 +87,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/eren-eray-yilmaz',
+      href: 'https://www.linkedin.com/in/eren-eray-yılmaz-014191291/',
       color: 'hover:text-blue-600'
     },
     {
